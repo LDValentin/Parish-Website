@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MassTimes from "./components/MassTimes";
 import Header from "./components/header";
+import Hero from "./components/Hero";
+import Resources from "./components/Resources";
 // import Readings from "./components/Readings";
 // import News from "./components/News";
 // import Groups from "./components/Groups";
@@ -12,6 +14,7 @@ function App() {
   return (
     <div>
       <Header></Header>
+      <Hero>  </Hero>
       <nav style={{ marginBottom: "20px" }}>
         {/* <button onClick={() => setPage("home")}>Home</button>
         <button onClick={() => setPage("news")}>News</button>
@@ -22,6 +25,7 @@ function App() {
       {page === "home" && (
         <>
           <MassTimes />
+          <Resources />
         </>
       )}
 

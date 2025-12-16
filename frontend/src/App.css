@@ -53,3 +53,90 @@
     text-decoration: none;
   }
 }
+/*Resources component styles*/
+
+.resources-section {
+  max-width: 900px; /* Match max-width of mass-times-container */
+  margin: 3rem auto; /* Match margin of mass-times-container */
+  padding: 0 1rem;
+  color: #182079; /* Match text color */
+  text-align: center; /* Center content */
+  background-color: transparent; /* Remove the light background */
+}
+
+/* Header Styling (Top title) */
+.resources-header {
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources-title {
+  font-family: 'Cormorant Garamond', serif; /* Match Mass Times H2 font */
+  font-weight: 700;
+  font-size: 2.5rem; /* Match Mass Times H2 size */
+  line-height: 1.2;
+  color: #182079;
+}
+
+/* The decorative line - Keep the gold accent */
+.resources-divider {
+  width: 50px;
+  height: 2px;
+  background-color: #9c8a66; 
+  margin: 1rem auto 0;
+}
+
+/* Cards Grid Layout - Keep the responsive grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 900px; /* Ensures grid stays within the main section width */
+  margin: auto;
+}
+
+/* Individual Card Styling */
+.resource-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+/* Icon (Keeping the Gold color for visual interest) */
+.card-icon {
+  font-size: 3rem; 
+  color: #9c8a66; 
+}
+
+.card-title {
+  font-family: 'Lora', serif; /* Match Mass Times H3/P font */
+  font-weight: 700;
+  font-size: 1.2rem; /* Adjusted for readability */
+  color: #8c0000; /* Use the same secondary accent color as Mass Times H3 */
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* Button Styling (Kept the strong button style for CTAs) */
+.card-button {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  background-color: #182079; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0c1450;
+}
