@@ -21,6 +21,7 @@ code {
   z-index: 100;
   background: white;
   color: #182079;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
 .brand {
   display: flex;
