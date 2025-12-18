@@ -3,6 +3,7 @@ import MassTimes from "./components/MassTimes";
 import Header from "./components/header";
 import Hero from "./components/Hero";
 import Resources from "./components/Resources";
+import Groups from "./components/Groups";
 // import Readings from "./components/Readings";
 // import News from "./components/News";
 // import Groups from "./components/Groups";
@@ -26,6 +27,7 @@ function App() {
         <>
           <MassTimes />
           <Resources />
+          <Groups />
         </>
       )}
 

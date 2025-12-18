@@ -31,7 +31,7 @@ export default function Resources() {
       {/* Main Title Area - Updated to Spanish title shown in your image */}
       <header className="resources-header">
         <h2 className="resources-title">
-          ENLACES RÁPIDOS A<br />RECURSOS CATÓLICOS
+          RECURSOS CATÓLICOS<br />
         </h2>
         {/* The short decorative line */}
         <div className="resources-divider"></div>

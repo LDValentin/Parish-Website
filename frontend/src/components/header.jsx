@@ -23,9 +23,9 @@ export default function Header() {
         
         {/* Desktop nav */}
         <nav className="nav nav-desktop">
-          <a href="#mass-hours">Mass Hours</a>
-          <a href="#groups">Groups</a>
-          <a href="#links">Resources</a>
+          <a href="#mass-hours">Horarios</a>
+          <a href="#links">Recursos</a>
+          <a href="#groups">Grupos</a>
           <a href="#map">Location</a>
         </nav>
 
@@ -47,9 +47,9 @@ export default function Header() {
           id="mobile-menu"
           className="nav nav-mobile"
         >
-          <a onClick={handleNavLinkClick} href="#mass-hours">Mass Hours</a>
-          <a onClick={handleNavLinkClick} href="#groups">Groups</a>
-          <a onClick={handleNavLinkClick} href="#links">Resources</a>
+          <a onClick={handleNavLinkClick} href="#mass-hours">Horarios</a>
+          <a onClick={handleNavLinkClick} href="#links">Recursos</a>
+          <a onClick={handleNavLinkClick} href="#groups">Grupos</a>
           <a onClick={handleNavLinkClick} href="#map">Location</a>
         </nav>
       )}

@@ -104,10 +104,15 @@ code {
   background-size: cover;
   background-position: center 20%;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-overlay {
-  height: 93.7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.45);
   color: white;
   display: flex;
@@ -161,18 +166,18 @@ code {
 }
 
 .confession-schedule p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* 5. Style the separator line (if you kept it from the review) */
 .mass-times-container hr {
   margin: 2rem auto;
-  width: 50%;
+  width: 75%;
   border-color: #182079;
 }
 
 
-/* index.css */
 
 /* --- Resources Section Styling (Updated to match Mass Times) --- */
 
@@ -203,7 +208,7 @@ code {
 
 /* The decorative line - Keep the gold accent */
 .resources-divider {
-  width: 50px;
+  width: 200px;
   height: 2px;
   background-color: #9c8a66; 
   margin: 1rem auto 0;
@@ -223,12 +228,51 @@ code {
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3); 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   min-height: 250px;
+}
+.group-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px;
+}
+.card-icon-container {
+  margin-bottom: 1.5rem;
+}
+.group-description {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #182079; /* Darker text for readability */
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Allows the description to take up available space */
+  white-space: pre-line; /* Preserves line breaks in the description */
+}
+
+/* Style the phone number link (replacing the button style) */
+.group-phone-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #182079; /* Use the secondary red accent color */
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.group-phone-link:hover {
+  background-color: #0c1450; /* Darker red on hover */
 }
 
 .resource-card .card-image {

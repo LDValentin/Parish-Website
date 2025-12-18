@@ -2,10 +2,13 @@
 export default function MassTimes() {
   const times = [
     { id: "sunday", day: "Domingo", times: ["7:30 AM - El Corcho", "9:00 AM - Parroquia"] },
+    { id: "tuesday" , day: "Primer y Tercer Martes", times: ["5:30 PM - Santa Isabel"] },
+    { id: "Jueves", day: "Jueves", times: ["7:00 PM - Parroquia"] },
+    { id: "saturday", day: "Sábados", times: ["4:00 PM - Las Vegas"] },
     // You can add more days here later
   ];
   const confessions = [
-    { id: "office", day: "Horas de oficina - Miercoles", time: "9:00 AM - 11:00 AM" },
+    { id: "office", day: "Horas de oficina - Miercoles y Jueves", time: "9:00 AM - 12:00 PM" },
     { id: "sunday", day: "Domingos", time: "30 Minutos antes de misa" },
   ];
 
