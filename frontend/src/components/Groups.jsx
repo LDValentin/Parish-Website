@@ -77,7 +77,7 @@ export default function Groups() {
       icon: "catequesis.jpg",
     }, 
     { 
-      title: "PASTORAL JUVENIL", 
+      title: "PASTORAL JUVENIL \n Guerreros del Amor Divino", 
       number: "787-315-2694",
       description: "Espacio para que los jóvenes fortalezcan y compartan su fe. \n Coordinador: Josué Cordero",
       icon: "jovenes.jpeg",
@@ -108,7 +108,7 @@ export default function Groups() {
       images: ["monaguillos1.jpeg", "monaguillos2.jpeg", "monaguillos3.jpeg", "monaguillos4.jpeg", "monaguillos5.jpeg"],
 
     },
-    {title: "Coro Juvenil", 
+    {title: "Coro Juvenil \n Laudis", 
       description: "Prestamos nuestras voces para honor y gloria de Dios \n Directora: Génesis Cordero",
       icon: "coro.png",
       number: "787-699-8914",
