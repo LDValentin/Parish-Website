@@ -44,7 +44,7 @@ export default function Groups() {
       icon: "caritas.jpg" 
     }, 
     { 
-      title: "CATEQUESIS INFANTIL", 
+      title: "CATEQUESIS", 
       number: "787-579-6962", 
       description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la Fe. \n Coordinadora: Sra. Tuyan Hamad", 
       icon: "catequesis.jpg",
@@ -68,7 +68,8 @@ export default function Groups() {
     },
     { title: "Familia de Jesús", 
       description: "Movimiento que ofrece, retiros matrimoniales a matrimonios sacramentales, civiles y parejas en convivencia que deseen casarse \n Contacto: Marita Olivo",
-      number: "787-233-9691" 
+      number: "787-233-9691" ,
+      icon: "familia_de_jesus.jpg"
 
     },
     { 

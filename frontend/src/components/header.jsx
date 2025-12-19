@@ -26,7 +26,10 @@ export default function Header() {
           <a href="#mass-hours">Horarios</a>
           <a href="#links">Recursos</a>
           <a href="#groups">Grupos</a>
-          <a href="#map">Location</a>
+          <a href="https://maps.app.goo.gl/8poZ32Psuocpf6bq6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >Ubicación</a>
         </nav>
 
         {/* Hamburger (mobile only) - Added aria attributes */}
@@ -50,7 +53,9 @@ export default function Header() {
           <a onClick={handleNavLinkClick} href="#mass-hours">Horarios</a>
           <a onClick={handleNavLinkClick} href="#links">Recursos</a>
           <a onClick={handleNavLinkClick} href="#groups">Grupos</a>
-          <a onClick={handleNavLinkClick} href="#map">Location</a>
+          <a onClick={handleNavLinkClick} href="https://maps.app.goo.gl/8poZ32Psuocpf6bq6"
+            target="_blank"
+            rel="noopener noreferrer">Ubicación</a>
         </nav>
       )}
     </header>
