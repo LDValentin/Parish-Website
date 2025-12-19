@@ -1,41 +1,68 @@
 // Groups.jsx (Revised Structure)
 import React from 'react';
+import { useState } from 'react';
 
 const DEFAULT_ICON_CHAR = '👥'; 
+const ImageModal = ({ images, onClose }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// 1. Updated Props: Removed 'link', added 'description'.
-const GroupCard = ({ icon, title, number, description }) => (
-  // Reusing the 'group-card resource-card' classes for consistent styling
+  const nextSlide = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button" onClick={onClose}>&times;</button>
+        
+        <div className="modal-slider">
+          <button className="nav-btn prev" onClick={prevSlide}>&#10094;</button>
+          <img src={images[currentIndex]} alt="Gallery" className="modal-image" />
+          <button className="nav-btn next" onClick={nextSlide}>&#10095;</button>
+        </div>
+        
+        <div className="image-counter">
+          {currentIndex + 1} / {images.length}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const GroupCard = ({ icon, title, number, description, images, onIconClick }) => (
   <div className="group-card resource-card"> 
     <div className="card-icon-container">
-      {/* Conditional rendering for image/icon remains the same */}
       {icon && typeof icon === 'string' ? (
         <img 
-          className="card-image" 
-          src={icon}            
+          className="card-image clickable-logo" // Added class for hover effect
+          src={icon}            
           alt={`${title} icon`}
+          onClick={() => images && onIconClick(images)} // Trigger modal
         />
       ) : (
-        <span className="card-icon" aria-hidden="true">
-          {DEFAULT_ICON_CHAR} 
-        </span>
+        <span className="card-icon" aria-hidden="true">👥</span>
       )}
     </div>
     <h3 className="card-title">{title}</h3>
+    <p className="group-description" style={{ whiteSpace: 'pre-line' }}>{description}</p> 
     
-    {/* 2. New Element: Display the brief description */}
-    <p className="group-description">{description}</p> 
-    
-    {/* 3. Display Phone Number: Display the contact number, wrapped in an accessible link */}
     {number && (
         <a href={`tel:${number.replace(/[-\s]/g, '')}`} className="group-phone-link">
             📞 {number}
         </a>
     )}
+    {images && <small className="gallery-hint"> Haz click en el logo para ver fotos</small>}
   </div>
 );
 
 export default function Groups() {
+  const [activeGallery, setActiveGallery] = useState(null);
   const groupsData = [
     { 
       title: "CÁRITAS PARROQUIAL", 
@@ -54,6 +81,7 @@ export default function Groups() {
       number: "787-315-2694",
       description: "Espacio para que los jóvenes fortalezcan y compartan su fe. \n Coordinador: Josué Cordero",
       icon: "jovenes.jpeg",
+      images: ["jovenes1.jpeg", "jovenes2.jpeg", "jovenes3.jpeg", "jovenes4.jpeg", "jovenes5.jpeg", "jovenes6.jpeg"],
     },
     { 
       title: "LEGION DE MARÍA",
@@ -76,23 +104,23 @@ export default function Groups() {
       title: "Servidores del Altar",
       icon: "monaguillos.jpeg",
       description: "Niños y jóvenes que asisten al sacerdote durante la celebración de los sacramentos. \n Coordinadora: Sra. Brenda Bermúdez",
-      number: "787-567-4568" 
+      number: "787-567-4568",
+      images: ["monaguillos1.jpeg", "monaguillos2.jpeg", "monaguillos3.jpeg", "monaguillos4.jpeg", "monaguillos5.jpeg"],
 
     },
     {title: "Coro Juvenil", 
       description: "Prestamos nuestras voces para honor y gloria de Dios \n Directora: Génesis Cordero",
       icon: "coro.png",
-      number: "787-699-8914" },
+      number: "787-699-8914",
+      images: ["coro1.jpeg", "coro2.jpeg", "coro3.jpeg", "coro4.jpeg"],
+    },
     // Add more groups as needed
   ];
 
-  return (
+ return (
     <section id="groups" className="groups-section mass-times-container">
-      
       <header className="resources-header">
-        <h2 className="resources-title">
-          GRUPOS PARROQUIALES
-        </h2>
+        <h2 className="resources-title">GRUPOS PARROQUIALES</h2>
         <div className="resources-divider"></div>
       </header>
 
@@ -102,11 +130,20 @@ export default function Groups() {
             key={index}
             title={group.title}
             number={group.number}
-            description={group.description} // Pass the new prop
+            description={group.description}
             icon={group.icon}
+            images={group.images} // FIX 2: Added images prop
+            onIconClick={(imgs) => setActiveGallery(imgs)} // FIX 3: Corrected syntax
           />
         ))}
       </div>
+
+      {activeGallery && (
+        <ImageModal 
+          images={activeGallery} 
+          onClose={() => setActiveGallery(null)} 
+        />
+      )}
     </section>
   );
 }
