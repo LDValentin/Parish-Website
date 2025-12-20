@@ -75,6 +75,7 @@ export default function Groups() {
       number: "787-579-6962", 
       description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la Fe. \n Coordinadora: Sra. Tuyan Hamad", 
       icon: "catequesis.jpg",
+      images: ["catequesis1.jpeg", "catequesis2.jpeg", "catequesis3.jpeg", "catequesis4.jpeg"], 
     }, 
     { 
       title: "PASTORAL JUVENIL \n Guerreros del Amor Divino", 
