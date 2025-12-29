@@ -4,7 +4,9 @@
 "ltex.enabled": [
   "javascript",        // Habilita LTeX en archivos .js
   "markdown",
-  "plaintext"
+  "plaintext",
+  "html",
+  "javascriptreact",
 ],
 "ltex.settings": {
   "analysis": {

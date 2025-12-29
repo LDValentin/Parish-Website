@@ -92,7 +92,7 @@ export default function Groups() {
     {
       title: "JESUS SANA", 
       icon: "jesus_sana.png",
-      description: "Ministerio de unidad a través de la oración y la fe en Jesucristo. \n Contacto: Carmen Torres",
+      description: "Ministerio de unidad a través de la oracion y la fe en Jesucristo. \n Contacto: Carmen Torres",
       number: "787-201-1644", 
     },
     { title: "Familia de Jesús", 
