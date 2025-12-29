@@ -1,0 +1,16 @@
+{
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.language": "es",
+"ltex.enabled": [
+  "javascript",        // Habilita LTeX en archivos .js
+  "markdown",
+  "plaintext"
+],
+"ltex.settings": {
+  "analysis": {
+    "completeStrings": true,    // Revisa texto en cadenas
+    "comments": true           // Revisa comentarios también
+  }
+}
+
+}
