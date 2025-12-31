@@ -67,13 +67,13 @@ export default function Groups() {
     { 
       title: "CÁRITAS PARROQUIAL", 
       number: "787-452-4117", 
-      description: "Cáritas de Puerto Rico trabaja para combatir la marginación y la desesperanza de los más débiles a la luz del amor de Dios. \n Contacto: Diacono Ferdinand",
+      description: "Cáritas de Puerto Rico trabaja para combatir la marginación y la desesperanza de los más débiles a la luz del amor de Dios. \n Contacto: Diácono Ferdinand",
       icon: "caritas.jpg" 
     }, 
     { 
       title: "CATEQUESIS", 
       number: "787-579-6962", 
-      description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la Fe. \n Coordinadora: Sra. Tuyan Hamad", 
+      description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la fe. \n Coordinadora: Sra. Tuyan Hamad", 
       icon: "catequesis.jpg",
       images: ["catequesis1.jpeg", "catequesis2.jpeg", "catequesis3.jpeg", "catequesis4.jpeg"], 
     }, 
@@ -85,18 +85,18 @@ export default function Groups() {
       images: ["jovenes1.jpeg", "jovenes2.jpeg", "jovenes3.jpeg", "jovenes4.jpeg", "jovenes5.jpeg", "jovenes6.jpeg"],
     },
     { 
-      title: "LEGION DE MARÍA",
+      title: "LEGIÓN DE MARÍA",
       icon: "Legion_de_Maria.png",
-      description: "Buscamos la santificación de nuestros miembros y del mundo mediante la oración, la devoción a la Virgen María y el apostolado activo \n Contacio: Sra. Áurea Olivo",
+      description: "Buscamos la santificación de nuestros miembros y del mundo mediante la oración, la devoción a la Virgen María y el apostolado activo \n Contacto: Sra. Áurea Olivo",
       number: "787-689-6623" },
     {
-      title: "JESUS SANA", 
+      title: "JESÚS SANA", 
       icon: "jesus_sana.png",
-      description: "Ministerio de unidad a través de la oracion y la fe en Jesucristo. \n Contacto: Carmen Torres",
+      description: "Ministerio de unidad a través de la oración y la fe en Jesucristo. \n Contacto: Carmen Torres",
       number: "787-201-1644", 
     },
     { title: "Familia de Jesús", 
-      description: "Movimiento que ofrece, retiros matrimoniales a matrimonios sacramentales, civiles y parejas en convivencia que deseen casarse \n Contacto: Marita Olivo",
+      description: "Movimiento que ofrece retiros matrimoniales a matrimonios sacramentales, civiles y parejas en convivencia que deseen casarse \n Contacto: Marita Olivo",
       number: "787-233-9691" ,
       icon: "familia_de_jesus.jpg"
 

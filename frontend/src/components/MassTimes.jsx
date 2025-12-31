@@ -8,7 +8,7 @@ export default function MassTimes() {
     // You can add more days here later
   ];
   const confessions = [
-    { id: "office", day: "Horas de oficina - Miercoles y Jueves ", time: "9:00 AM - 12:00 PM\n Dirección Espiritual por cita previa" },
+    { id: "office", day: "Horas de oficina - Miércoles y Jueves ", time: "9:00 AM - 12:00 PM\n Dirección Espiritual por cita previa" },
     { id: "sunday", day: "Domingos", time: "30 Minutos antes de misa" },
   ];
 

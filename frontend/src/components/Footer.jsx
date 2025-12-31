@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Column 3: Social/Office Hours */}
         <div className="footer-column">
           <h3 className="footer-heading">Oficina Parroquial</h3>
-          <p>Miercoles y Jueves</p>
+          <p>Miércoles y Jueves</p>
           <p>9:00 AM - 12:00 PM</p>
         </div>
       </div>

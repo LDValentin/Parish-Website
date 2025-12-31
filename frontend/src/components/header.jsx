@@ -15,7 +15,7 @@ export default function Header() {
         <div className="brand">
           <img 
             src="/logo.jpeg" // Path assuming logo.jpeg is in your public/ directory
-            alt="Parroquia Nuestra Señora de los Angeles Logo"
+            alt="Parroquia Nuestra Señora de los Ángeles Logo"
             className="logo-img" 
           />
           <h1 className="name logo-text">Parroquia Nuestra Señora de los Angeles</h1>
