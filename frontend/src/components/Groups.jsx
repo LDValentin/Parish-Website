@@ -73,7 +73,7 @@ export default function Groups() {
     { 
       title: "CATEQUESIS", 
       number: "787-579-6962", 
-      description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la fe. \n Coordinadora: Sra. Tuyan Hamad", 
+      description: "Preparación de niños, jóvenes, y adultos para los sacramentos y la vida de la fe. \n Coordinadora: Sra. Tuyan Hammad", 
       icon: "catequesis.jpg",
       images: ["catequesis1.jpeg", "catequesis2.jpeg", "catequesis3.jpeg", "catequesis4.jpeg"], 
     }, 
@@ -87,7 +87,7 @@ export default function Groups() {
     { 
       title: "LEGIÓN DE MARÍA",
       icon: "Legion_de_Maria.png",
-      description: "Buscamos la santificación de nuestros miembros y del mundo mediante la oración, la devoción a la Virgen María y el apostolado activo \n Contacto: Sra. Áurea Olivo",
+      description: "Buscamos la santificación de nuestros miembros y del mundo mediante la oración, la devoción a la Virgen María y el apostolado activo. \n Contacto: Sra. Áurea Olivo",
       number: "787-689-6623" },
     {
       title: "JESÚS SANA", 
@@ -96,7 +96,7 @@ export default function Groups() {
       number: "787-201-1644", 
     },
     { title: "Familia de Jesús", 
-      description: "Movimiento que ofrece retiros matrimoniales a matrimonios sacramentales, civiles y parejas en convivencia que deseen casarse \n Contacto: Marita Olivo",
+      description: "Movimiento que ofrece retiros matrimoniales a matrimonios sacramentales, civiles y parejas en convivencia que deseen casarse. \n Contacto: Marita Olivo",
       number: "787-233-9691" ,
       icon: "familia_de_jesus.jpg"
 
@@ -110,7 +110,7 @@ export default function Groups() {
 
     },
     {title: "Coro Juvenil \n Laudis", 
-      description: "Prestamos nuestras voces para honor y gloria de Dios \n Directora: Génesis Cordero",
+      description: "Prestamos nuestras voces para honor y gloria de Dios. \n Directora: Génesis Cordero",
       icon: "coro.png",
       number: "787-699-8914",
       images: ["coro1.jpeg", "coro2.jpeg", "coro3.jpeg", "coro4.jpeg"],
